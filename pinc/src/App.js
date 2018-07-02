@@ -8,7 +8,7 @@ class App extends Component {
     return (
     <div>
     
-    <Navbar>
+    <Navbar className="clearfix">
       <Navbar.Header>
         <Navbar.Brand>
           <a href="#home">Pinc Logo</a>
@@ -24,24 +24,23 @@ class App extends Component {
         <NavItem eventKey={3} href="#">
           Activity
         </NavItem>
+      </Nav>
       
-      <Nav>
+      <Nav pullRight>
         <NavItem>
         <FormControl
             type="text"
             placeholder="Enter text"
           />
         </NavItem>
-        
+        <Nav>
         <NavItem>
           <Image src="/thumbnail.png" circle />
         </NavItem>
-        
+        </Nav>
         <NavItem> 
           <Button>Add Post</Button>
         </NavItem>
-      </Nav>
-      
       </Nav>
     </Navbar>
     
