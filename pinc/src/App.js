@@ -24,41 +24,44 @@ class App extends Component {
         <NavItem eventKey={3} href="#">
           Activity
         </NavItem>
-        
-        <NavItem pullRight>
+      
+      <Nav>
+        <NavItem>
         <FormControl
             type="text"
             placeholder="Enter text"
           />
         </NavItem>
         
-        <NavItem pullRight>
+        <NavItem>
           <Image src="/thumbnail.png" circle />
         </NavItem>
         
-        <NavItem>
-          <Button>Default</Button>
+        <NavItem> 
+          <Button>Add Post</Button>
         </NavItem>
-        
+      </Nav>
+      
       </Nav>
     </Navbar>
     
-    <Button bsStyle="primary" bsSize="large">
-      <Image src="/thumbnail.png" circle />
-      Start a conversation
-    </Button>
-    <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
-      <Tab eventKey={1} title="Posts">
-        Tab 1 content
-      </Tab>
-      <Tab eventKey={2} title="Polls">
-        Tab 2 content
-      </Tab>
-    </Tabs>
-    
-    <h1>
-    API CALL HERE
-    </h1>
+    <div className="text-center">
+      <Button bsStyle="btn btn-light" bsSize="large">
+        <Image src="/thumbnail.png" circle />
+        Start a conversation
+      </Button>
+        <Tabs className="text-center" defaultActiveKey={1} id="uncontrolled-tab-example">
+          <Tab eventKey={1} title="Posts">
+            Tab 1 content
+          </Tab>
+          <Tab eventKey={2} title="Polls">
+            Tab 2 content
+          </Tab>
+        </Tabs>
+      <h1>
+        API CALL HERE
+      </h1>
+    </div>
     
     </div>
     );
