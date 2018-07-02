@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { Navbar, Nav, NavItem, FormControl, Image, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, FormControl, Image, Button, Tabs, Tab } from 'react-bootstrap';
 
 class App extends Component {
   render() {
@@ -42,6 +42,23 @@ class App extends Component {
         
       </Nav>
     </Navbar>
+    
+    <Button bsStyle="primary" bsSize="large">
+      <Image src="/thumbnail.png" circle />
+      Start a conversation
+    </Button>
+    <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
+      <Tab eventKey={1} title="Posts">
+        Tab 1 content
+      </Tab>
+      <Tab eventKey={2} title="Polls">
+        Tab 2 content
+      </Tab>
+    </Tabs>
+    
+    <h1>
+    API CALL HERE
+    </h1>
     
     </div>
     );
