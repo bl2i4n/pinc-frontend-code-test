@@ -1,29 +1,45 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, FormControl, Image, Button } from 'react-bootstrap';
 
 class App extends Component {
   render() {
     return (
-    <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        
+    <div>
+    
     <Navbar>
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="#home">React-Bootstrap</a>
+          <a href="#home">Pinc Logo</a>
         </Navbar.Brand>
       </Navbar.Header>
       <Nav>
         <NavItem eventKey={1} href="#">
-          Link
+          Feed
         </NavItem>
         <NavItem eventKey={2} href="#">
-          Link
+          Groups
         </NavItem>
+        <NavItem eventKey={3} href="#">
+          Activity
+        </NavItem>
+        
+        <NavItem pullRight>
+        <FormControl
+            type="text"
+            placeholder="Enter text"
+          />
+        </NavItem>
+        
+        <NavItem pullRight>
+          <Image src="/thumbnail.png" circle />
+        </NavItem>
+        
+        <NavItem>
+          <Button>Default</Button>
+        </NavItem>
+        
       </Nav>
     </Navbar>
     
