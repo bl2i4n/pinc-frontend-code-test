@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import { Navbar, Nav, NavItem, FormControl, Image, Button, Tabs, Tab, Glyphicon } from 'react-bootstrap';
+import StartConvo from './components/StartConvo';
 
 class App extends Component {
   render() {
@@ -50,6 +51,9 @@ class App extends Component {
     <div className="text-center">
       <Button bsStyle="btn btn-light" bsSize="large">
         <Image className="convo-size" src="/start.png" circle />
+
+        <StartConvo />
+
         Start a conversation
       </Button>
         <Tabs className="text-center" defaultActiveKey={1} id="uncontrolled-tab-example">
