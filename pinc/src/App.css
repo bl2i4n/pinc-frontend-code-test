@@ -10,6 +10,23 @@
 }
 
 
-.move-right{
-  color: red;
+.form-width {
+  width: 200%;
+  position: relative;
+  right: 150px;
+  border-radius: 50px;
+  background-color: #3e3272;
+}
+
+.nav-button{
+  border-radius: 50px;
+  color: #5948a3;
+}
+
+.navbar-default {
+    background-color: #5948a3;
+}
+
+.nav-text {
+  color: white;
 }

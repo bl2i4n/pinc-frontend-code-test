@@ -7,11 +7,13 @@ class App extends Component {
   render() {
     return (
     <div>
-    
+
     <Navbar className="clearfix">
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="#home">Pinc Logo</a>
+          <a href="#home">
+            <Image src="./pinc_logo.png" circle />
+          </a>
         </Navbar.Brand>
       </Navbar.Header>
       <Nav>
@@ -25,12 +27,13 @@ class App extends Component {
           Activity
         </NavItem>
       </Nav>
-      
+
       <Nav pullRight>
         <NavItem>
         <FormControl
+            className="form-width"
             type="text"
-            placeholder="Enter text"
+            placeholder="Search"
           />
         </NavItem>
         <Nav>
@@ -38,15 +41,15 @@ class App extends Component {
           <Image src="/thumbnail.png" circle />
         </NavItem>
         </Nav>
-        <NavItem> 
-          <Button>Add Post</Button>
+        <NavItem>
+          <Button className="nav-button">Add Post</Button>
         </NavItem>
       </Nav>
     </Navbar>
-    
+
     <div className="text-center">
       <Button bsStyle="btn btn-light" bsSize="large">
-        <Image src="/thumbnail.png" circle />
+        <Image src="/start.png" circle />
         Start a conversation
       </Button>
         <Tabs className="text-center" defaultActiveKey={1} id="uncontrolled-tab-example">
@@ -61,7 +64,7 @@ class App extends Component {
         API CALL HERE
       </h1>
     </div>
-    
+
     </div>
     );
   }
