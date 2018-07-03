@@ -1,30 +1,30 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { Navbar, Nav, NavItem, FormControl, Image, Button, Tabs, Tab } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, FormControl, Image, Button, Tabs, Tab, Glyphicon } from 'react-bootstrap';
 
 class App extends Component {
   render() {
     return (
     <div>
 
-    <Navbar className="clearfix">
+    <Navbar className="">
       <Navbar.Header>
         <Navbar.Brand>
           <a href="#home">
-            <Image src="./pinc_logo.png" circle />
+            <Image className="img-size" src="./pinc_logo.png" circle />
           </a>
         </Navbar.Brand>
       </Navbar.Header>
-      <Nav>
+      <Nav className="padme">
         <NavItem eventKey={1} href="#">
-          Feed
+          <Glyphicon glyph="home" /> Feed
         </NavItem>
         <NavItem eventKey={2} href="#">
-          Groups
+          <Glyphicon className=""/> Groups
         </NavItem>
         <NavItem eventKey={3} href="#">
-          Activity
+          <Glyphicon glyph="bell" /> Activity
         </NavItem>
       </Nav>
 
@@ -38,7 +38,7 @@ class App extends Component {
         </NavItem>
         <Nav>
         <NavItem>
-          <Image src="/thumbnail.png" circle />
+          <Image className="pic" src="/profile_pic.png" />
         </NavItem>
         </Nav>
         <NavItem>
@@ -49,7 +49,7 @@ class App extends Component {
 
     <div className="text-center">
       <Button bsStyle="btn btn-light" bsSize="large">
-        <Image src="/start.png" circle />
+        <Image className="convo-size" src="/start.png" circle />
         Start a conversation
       </Button>
         <Tabs className="text-center" defaultActiveKey={1} id="uncontrolled-tab-example">

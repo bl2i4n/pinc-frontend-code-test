@@ -11,11 +11,12 @@
 
 
 .form-width {
-  width: 200%;
+  width: 230%;
   position: relative;
-  right: 150px;
+  right: 110px;
   border-radius: 50px;
   background-color: #3e3272;
+  text-align: center;
 }
 
 .nav-button{
@@ -29,4 +30,31 @@
 
 .nav-text {
   color: white;
+}
+
+.img-size{
+  max-width:180%;
+  max-height:180%;
+}
+
+.convo-size{
+  max-width:20%;
+  max-height:20%;
+}
+
+.pic {
+  width:20%;
+  height:20%;
+  border-radius: 50%;
+  position: relative;
+  left: 120px;
+}
+
+.padme{
+  padding-top: 7px;
+  padding-right:200px;
+}
+
+.navbar-default .navbar-nav > li > a {
+     color: white;
 }
