@@ -56,5 +56,21 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-     color: white;
+  color: white;
+}
+
+
+.pic-in-modal {
+  width: 6%;
+  height: 6%;
+  border-radius: 50%;
+}
+
+.modal-text{
+  padding-right: 50px;
+}
+
+.post-btn {
+  background-color: #5948a3;
+  color: white;
 }

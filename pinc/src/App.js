@@ -37,11 +37,11 @@ class App extends Component {
             placeholder="Search"
           />
         </NavItem>
-        <Nav>
+
         <NavItem>
           <Image className="pic" src="/profile_pic.png" />
         </NavItem>
-        </Nav>
+
         <NavItem>
           <Button className="nav-button">Add Post</Button>
         </NavItem>
@@ -49,13 +49,9 @@ class App extends Component {
     </Navbar>
 
     <div className="text-center">
-      <Button bsStyle="btn btn-light" bsSize="large">
-        <Image className="convo-size" src="/start.png" circle />
 
         <StartConvo />
 
-        Start a conversation
-      </Button>
         <Tabs className="text-center" defaultActiveKey={1} id="uncontrolled-tab-example">
           <Tab eventKey={1} title="Posts">
             Tab 1 content
