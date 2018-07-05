@@ -3,6 +3,8 @@ import './App.css';
 
 import { Navbar, Nav, NavItem, FormControl, Image, Button, Tabs, Tab, Glyphicon } from 'react-bootstrap';
 import StartConvo from './components/StartConvo';
+import DataList from './components/DataList';
+
 
 class App extends Component {
   render() {
@@ -62,6 +64,7 @@ class App extends Component {
         </Tabs>
       <h1>
         API CALL HERE
+        <DataList />
       </h1>
     </div>
 

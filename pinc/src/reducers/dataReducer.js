@@ -1,7 +1,7 @@
 import initialState from './initialState';
 import {FETCH_DATA, RECEIVE_DATA} from '../actions/actionTypes';
 
-export default function stuff(state = initialState.stuff, action) {
+export default function stuff(state = initialState.data, action) {
   let newState;
   switch (action.type) {
     case FETCH_DATA:
