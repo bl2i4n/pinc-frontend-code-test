@@ -4,7 +4,7 @@ import * as dataActions from '../actions/dataActions';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-class dataList extends React.Component {
+class DataList extends React.Component {
 
   componentWillMount() { // HERE WE ARE TRIGGERING THE ACTION
      this.props.dataActions.fetchData();
@@ -12,7 +12,8 @@ class dataList extends React.Component {
 
 
   renderData() {
-    return <div>{JSON.stringify(this.props.data)}</div>;
+    const displayData = JSON.stringify(this.props.data)
+    return <div>{displayData}</div>;
   }
 
 
@@ -31,7 +32,7 @@ class dataList extends React.Component {
   }
 }
 
-dataList.propTypes = {
+DataList.propTypes = {
   dataActions: PropTypes.object,
   data: PropTypes.array
 };
@@ -51,4 +52,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(dataList);
+)(DataList);
