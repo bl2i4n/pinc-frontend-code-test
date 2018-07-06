@@ -1,12 +1,18 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import dataActions from '../actions/dataActions';
+import * as dataActions from '../actions/dataActions';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 class dataList extends React.Component {
+
+  componentWillMount() { // HERE WE ARE TRIGGERING THE ACTION
+     this.props.dataActions.fetchData();
+   }
+
+
   renderData() {
-    return <div>{this.props.data}</div>;
+    return <div>{JSON.stringify(this.props.data)}</div>;
   }
 
 

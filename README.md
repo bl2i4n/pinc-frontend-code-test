@@ -5,22 +5,14 @@
 Hi there, if you ar solving this challenge, it means you have made headways. Awesome
 
 
-# Test One
+# Test One Answers
 
-You will be required to write the aswers to the questions below.
-
-> Concept of linting 
-Understanding of promises and at least an idea of async/await and why they're used over promises
-Why do we need states in applications? 
-Why do we need global state management with something like Redux
-What is cascading in CSS and what problem does styled components or similar CSS in JS solutions solve
-What is scoping in JS? 
-What is lexical scope?
-What is the idea of immutability or immutable state
+> Linting is basically analyzing your code for potential errors, since we are human there are always syntax errors and it’s hard to maintain large codebases, which is where linting comes in.
+Promises are similar to event listeners, they help a ton and got rid of callback hell. Promises also use async and await. Async is to guarantee that a promise is returned and then once the promise is returned await is there to return the data from the promise. Global state management is needed when the data in your application is always changing, redux eases and organizes how the data is presented in your application. In reference to redux you have a store that handles all the different states of your application and pushes those states to components as they are needed. Cascading CSS is essentially multiple styles that can be applied to HTML. Styled components solves the mapping between components and styles and keeps all the styles in a central and easily accessible location. Scoping in JS is how code gets chosen to run. There are different scopes such as global, local, lexical, and functional scope, each having their own context and priority when it comes to running code. Lexical scope is generally function scope, an example would be that some variables are only accessible from within a function, while variables outside of the function can be accessed anywhere anytime. The idea behind immutability is that a certain variable or object can’t be changed, like  a url for an api call, if you’re url never changes and should never be tampered with then that url is immutable.
 
 ## Coding Test
 
-You will be required to convert this UI to frontend app. 
+You will be required to convert this UI to frontend app.
 
 Using: React and Redux.
 
@@ -37,11 +29,11 @@ On click on the Start a conversation, the input box should disaplay like so
 
 Make Request to Our API to build display real questions, emojis, latest answerers
 
-  
+
 
 Connecting to Questions API
 
-  
+
 
 Method: GET
 

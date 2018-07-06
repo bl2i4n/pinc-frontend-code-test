@@ -1,5 +1,5 @@
 import React from 'react';
-import { Popover, Tooltip, Button, Modal, OverlayTrigger, Image, Glyphicon } from 'react-bootstrap';
+import { Button, Modal, Image, Glyphicon } from 'react-bootstrap';
 
 
 class StartConvo extends React.Component {

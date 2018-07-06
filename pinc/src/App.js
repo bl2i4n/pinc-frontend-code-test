@@ -56,10 +56,8 @@ class App extends Component {
 
         <Tabs className="text-center" defaultActiveKey={1} id="uncontrolled-tab-example">
           <Tab eventKey={1} title="Posts">
-            Tab 1 content
           </Tab>
           <Tab eventKey={2} title="Polls">
-            Tab 2 content
           </Tab>
         </Tabs>
       <h1>
